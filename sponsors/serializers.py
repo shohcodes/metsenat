@@ -41,7 +41,7 @@ class SponsorCreateSerializer(serializers.ModelSerializer):
         if attrs.get("type") == SponsorTypeChoices.legal_entity.value:
             if not attrs.get("organization"):
                 raise ValidationError(
-                    f"Organization is required when sponsor type is {SponsorTypeChoices.legal_entity.value}"
+                    f"Organization is required for legal entities!"
                 )
         elif attrs.get("type") == SponsorTypeChoices.individual_person.value:
             attrs["organization"] = None
@@ -60,7 +60,7 @@ class SponsorUpdateSerializer(serializers.ModelSerializer):
         if attrs.get("type") == SponsorTypeChoices.legal_entity.value:
             if not attrs.get("organization"):
                 raise ValidationError(
-                    f"Organization is required when sponsor type is {SponsorTypeChoices.legal_entity.value}"
+                    f"Organization is required for legal entities!"
                 )
         elif attrs.get("type") == SponsorTypeChoices.individual_person.value:
             attrs["organization"] = None
