@@ -13,6 +13,8 @@ class SponsorViewSet(ModelViewSet):
     serializer_class = SponsorSerializer
     permission_classes = [SponsorPermission]
 
+    # second version of getting permission
+
     # def get_permissions(self):
     #     if self.action == "create":
     #         return [AllowAny]
