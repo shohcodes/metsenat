@@ -1,4 +1,3 @@
 ### Metsenat Project For Education
-Purpose of the project is to teach students how to develop project from scratch.
-Students will work on their own branch and can get changes from main or develop branches which are controlled by mentor.
+This is a group of philanthropists who intend to provide financial assistance on a voluntary and purely voluntary basis to needy students who are struggling to pay their fees but have talent and potential.
 
